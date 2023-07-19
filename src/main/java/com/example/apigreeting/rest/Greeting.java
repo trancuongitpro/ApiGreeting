@@ -1,4 +1,4 @@
-package anhnnth.codelean.apigreeting.rest;
+package com.example.apigreeting.rest;
 
 public class Greeting {
     private final long id;

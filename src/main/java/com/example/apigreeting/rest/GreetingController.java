@@ -1,4 +1,4 @@
-package anhnnth.codelean.apigreeting.rest;
+package com.example.apigreeting.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,7 +12,7 @@ public class GreetingController {
     private final AtomicLong counter = new AtomicLong();
 
     @GetMapping("/greeting")
-    public anhnnth.codelean.apigreeting.rest.Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name){
-        return new anhnnth.codelean.apigreeting.rest.Greeting(counter.incrementAndGet(), String.format(template, name));
+    public com.example.apigreeting.rest.Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name){
+        return new com.example.apigreeting.rest.Greeting(counter.incrementAndGet(), String.format(template, name));
     }
 }
